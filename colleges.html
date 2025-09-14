@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo collage maker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            background-size: cover;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-lg flex items-center justify-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/91e451c1-1207-4d7e-90a8-af1ddea330af.png" alt="Placeholder logo icon representing the design tool brand with C initial for Canva-like interface" />
+                </div>
+                <span class="font-bold text-xl text-gray-900">photo collage maker</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition-colors">Features</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition-colors">Templates</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition-colors">Pricing</a>
+            </nav>
+            <div class="flex space-x-4">
+                <button class="px-4 py-2 text-blue-600 border border-blue-600 rounded-md hover:bg-blue-50 transition-colors">Sign In</button>
+                <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+<section class="hero-bg text-white py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-5xl md:text-6xl font-bold mb-6 max-w-4xl mx-auto">
+      Create Stunning Designs with Ease
+    </h1>
+    <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+      Unleash your creativity with powerful tools that make graphic design simple and fun for everyone.
+    </p>
+    <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+      
+      <!-- Start Designing button -->
+      <button onclick="window.location.href='edit.html'" 
+              class="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+        Start Designing
+      </button>
+
+      <!-- Watch Demo link styled as button -->
+      <a href="edit.html" 
+         class="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors inline-block">
+        Watch Demo
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">Powerful Features for Every Creator</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/12155373-d683-41ff-ae88-4ee11fc1525f.png" alt="Icon representing drag-and-drop feature with blue background and white F symbol indicating file organization" />
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center">Drag & Drop Interface</h3>
+                    <p class="text-gray-600 text-center">
+                        Easily add and arrange elements with our intuitive drag-and-drop system for quick design creation.
+                    </p>
+                </div>
+                <div class="card bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/409b6b86-7a35-4989-aa22-ac6c76098cef.png" alt="Icon representing templates feature with green background and white T symbol indicating design templates" />
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center">Thousands of Templates</h3>
+                    <p class="text-gray-600 text-center">
+                        Choose from our extensive library of professionally designed templates to get started instantly.
+                    </p>
+                </div>
+                <div class="card bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e9f542ca-c79d-4145-8f9d-9e81c6db6e61.png" alt="Icon representing collaboration feature with purple background and white S symbol indicating sharing and teamwork" />
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center">Real-time Collaboration</h3>
+                    <p class="text-gray-600 text-center">
+                        Work seamlessly with your team members in real-time, sharing and editing designs together.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">Inspiring Creations</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="animate-float">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2dae2e84-9d69-4f0a-b0e0-886f521c9512.png" alt="Vibrant colorful poster design for a music concert with dynamic text overlays, abstract shapes, and vivid gradients in blue and orange tones" class="w-full h-64 object-cover rounded-lg shadow-lg" />
+                </div>
+                <div class="animate-float" style="animation-delay: 2s;">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/30a0eae3-665b-4fc1-a5c7-313742be9202.png" alt="Eye-catching social media graphic for a brand with clean typography, product photography, and modern color scheme in red and white" class="w-full h-64 object-cover rounded-lg shadow-lg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Design Something Amazing?</h2>
+            <p class="text-xl mb-8">Join millions of creators who trust our platform for their design needs.</p>
+            <button class="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                Get Started Free
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-pink-500 to-yellow-500 rounded flex items-center justify-center">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c3c97598-e4b1-4b09-b0e9-923ab2f50bbf.png" alt="Small logo icon for footer representation with C initial on white background over gradient" />
+                        </div>
+                        <span class="font-bold text-lg text-white">DesignHub</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">Templates</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Integrations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700">
+                <p class="text-center">© 2023 DesignHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animation on scroll (simple JS animation)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.6s ease-out';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
